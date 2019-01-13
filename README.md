@@ -6,8 +6,6 @@ project is to create the go-to directory for developers and system designers to
 learn about the existing tools for developing applications which are privacy
 preserving.
 
-# Primitives
-
 ## Data structures
 
 [**Claimchain**](https://claimchain.github.io/): Cryptographic primitive
@@ -23,10 +21,10 @@ of the box (i.e. there is no mechanism to ensure all users have the same version
 of the ClaimChain at the same point).
 
 *research*: [original paper](https://arxiv.org/abs/1707.06279)
-
 *implementations* [Python](https://github.com/claimchain/claimchain-core)
-
 *tags*: data-structure, merkle-tree, p2p, PKI.
+
+---
 
 # Community
 
