@@ -6,11 +6,17 @@ project is to create the go-to directory for developers and system designers to
 learn about the existing tools for developing applications which are privacy
 preserving.
 
-## Data structures
+## Index
+
+**A. Data structures**
+- [ClaimChain](https://github.com/hashmatter/privacy-preserving-primitives/#claimchain)
+
+
+## A. Data structures
 
 ### ClaimChain
 
-[**ClaimChain**](https://claimchain.github.io/) is a cryptographic primitive
+[ClaimChain](https://claimchain.github.io/) is a cryptographic primitive
 providing a privacy-preserving, authenticated and decentralized data store of
 claims. The [paper](https://arxiv.org/abs/1707.06279) shows how to use 
 ClaimChain as a privacy-preserving decentralized public key distribution.
@@ -22,7 +28,7 @@ authority to provide its properties, although it does not provide consensus out
 of the box (i.e. there is no mechanism to ensure all users have the same version
 of the ClaimChain at the same point).
 
-- **website**: [**Claimchain**](https://claimchain.github.io/)
+- **website**: [ClaimChain](https://claimchain.github.io/)
 - **research**: [original paper](https://arxiv.org/abs/1707.06279)
 - **implementations**: [Python](https://github.com/claimchain/claimchain-core)
 - **tags**: data-structure, merkle-tree, p2p, PKI.
