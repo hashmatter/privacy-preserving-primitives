@@ -10,7 +10,8 @@ preserving.
 
 **A. Data structures**
 - [ClaimChain](https://github.com/hashmatter/privacy-preserving-primitives/#claimchain)
-
+**B. Onion routing**
+- [Sphinx](https://github.com/hashmatter/privacy-preserving-primitives/#sphinx)
 
 ## A. Data structures
 
@@ -32,6 +33,25 @@ of the ClaimChain at the same point).
 - **research**: [original paper](https://arxiv.org/abs/1707.06279)
 - **implementations**: [Python](https://github.com/claimchain/claimchain-core)
 - **tags**: data-structure, merkle-tree, p2p, PKI.
+
+**B. Secure messaging**
+
+### Sphinx
+
+[Sphinx](https://katzenpost.mixnetworks.org/docs/specs/sphinx.html) is a compact
+cryptographic packet format that can be used in onion routing, mix networks and
+as a general purpose secure transport between senders and intermediate relays in
+p2p networks. Sphinx uses Diffie Hellman to derive the shared keys between the 
+sender of the message and the relayers. Designers and developers can chose the
+family of cryptographic primitives to use, depending on the cases.
+
+*when to use it*: In network applications in which relay nodes should not learn
+anything about the source, destination and content of the message to relay,
+besides the information needed to forward the message to the next hop.
+
+- **research**: [original paper](https://cypherpunks.ca/~iang/pubs/Sphinx_Oakland09.pdf)
+- **implementations**: [rust-sphinxcrypto](https://github.com/applied-mixnetworks/rust-sphinxcrypto), [lightning-onion (Golang)](https://github.com/lightningnetwork/lightning-onion)
+- **tags**: mix-networks, onion-routing, anonymous-communication.
 
 ---
 
