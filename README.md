@@ -1,6 +1,6 @@
 # Privacy preserving primitives
 
-This repo lists project implementations, designs and papers of primitives and 
+This repo lists implementations, design and papers of primitives and 
 protocols aiming at increasing privacy of networked systems. The goal of this
 project is to create the go-to directory for developers and system designers to
 learn about the existing tools for developing applications which are privacy
@@ -13,6 +13,7 @@ preserving.
 
 **B. Secure messaging**
 - [Sphinx](https://github.com/hashmatter/privacy-preserving-primitives/#sphinx)
+- [HORNET](https://github.com/hashmatter/privacy-preserving-primitives/#hornet)
 
 ## A. Data structures
 
@@ -54,6 +55,26 @@ besides the information needed to forward the message to the next hop.
 - **research**: [original paper](https://cypherpunks.ca/~iang/pubs/Sphinx_Oakland09.pdf)
 - **implementations**: [rust-sphinxcrypto](https://github.com/applied-mixnetworks/rust-sphinxcrypto), [lightning-onion (Golang)](https://github.com/lightningnetwork/lightning-onion)
 - **tags**: mix-networks, onion-routing, anonymous-communication.
+
+### HORNET
+
+[HORNET](https://netsec.ethz.ch/research/anonymity.php) is a high-speed
+anonymous communication protocol designed to be deployed at a network level by
+Future Internet Architectures by default. The message relays do not keep state 
+of anonymous communications. Instead, the state of the anonymous channel is
+included in the message itself.
+
+*when to use it*: On top of P2P overlay networks (e.g. DHTs) to provide protection
+against packet/message correlation, session linkage, metadata leaks and to
+protect against passive network adversaries. Any P2P messaging application which
+uses multiple message relays can use HORNET to provide metadata protection
+against passive and global adversaries.
+
+
+- **website**: [HORNET](https://netsec.ethz.ch/research/anonymity.php)
+- **research**: [original  paper](https://netsec.ethz.ch/publications/papers/chen_hornet_ccs15.pdf)
+- **implementations**: [Golang](https://github.com/hashmatter/hornet)
+- **tags**: onion-routing, anonymous-communication, protocol.
 
 ---
 
